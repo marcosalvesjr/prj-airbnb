@@ -14,7 +14,7 @@ const TopBar = () => {
         <Link href={"#"}>Experiência</Link>
       </div>
       <ButtonIcon
-        icone={<IconUserCircle aria-label="Ícone de usuário" size={32} />}
+        icone={<IconUserCircle aria-label="Ícone de usuário" size={20} />}
       >
         Entrar
       </ButtonIcon>
