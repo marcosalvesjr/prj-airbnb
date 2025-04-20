@@ -1,0 +1,34 @@
+import Image from "next/image";
+import React from "react";
+type Photo = {
+  id: string;
+  source: string;
+  description: string;
+};
+
+type GaleryProps = {
+  photos: Photo[];
+};
+
+const Gallery = ({ photos }: GaleryProps) => {
+  return (
+    <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
+      {photos.slice(0, 9).map((photo, index) => {
+        const firstPhoto = index == 0 ? "col-span-2 row-span-2" : "";
+        return (
+          <div key={index} className={`${firstPhoto}`}>
+            <Image
+              className="w-full aspect-square object-cover"
+              src={photo.source}
+              alt={photo.description}
+              width={1280}
+              height={720}
+            />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export default Gallery;
