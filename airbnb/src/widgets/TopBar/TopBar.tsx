@@ -1,7 +1,9 @@
 //components
-import Logo from "@/components/Logo/Logo";
+import Logo from "@/components/Logo";
 import Link from "next/link";
 import React from "react";
+import ButtonIcon from "@/components/ButtonIcon";
+import { IconUserCircle } from "@/assets/icons";
 
 const TopBar = () => {
   return (
@@ -11,9 +13,11 @@ const TopBar = () => {
         <Link href={"/"}>Acomodações</Link>
         <Link href={"#"}>Experiência</Link>
       </div>
-      <button className="cursor-pointer border-1 rounded-md py-1 px-2">
+      <ButtonIcon
+        icone={<IconUserCircle aria-label="Ícone de usuário" size={32} />}
+      >
         Entrar
-      </button>
+      </ButtonIcon>
     </div>
   );
 };
