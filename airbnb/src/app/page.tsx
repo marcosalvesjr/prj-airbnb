@@ -1,5 +1,6 @@
 //widgates
 import Acomodations from "@/widgets/Accomodations/Accomodations";
+import FooterWidget from "@/widgets/FooterWidget/FooterWidget";
 import HorizontalTabbedNagivation from "@/widgets/HorizontalTabbedNavigation/HorizontalTabbedNagivation";
 import SearchBar from "@/widgets/SearchBar/SearchBar";
 import TopBar from "@/widgets/TopBar/TopBar";
@@ -16,8 +17,8 @@ export default function Home() {
         <HorizontalTabbedNagivation />
         <Acomodations />
       </main>
-      <footer className="container mx-auto border-2 border-purple-500">
-        Rodapé
+      <footer className="bg-gray-200">
+        <FooterWidget />
       </footer>
     </>
   );
