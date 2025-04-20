@@ -1,16 +1,21 @@
+import HorizontalTabbedNagivation from "@/widgets/HorizontalTabbedNavigation/HorizontalTabbedNagivation";
 import SearchBar from "@/widgets/SearchBar/SearchBar";
 import TopBar from "@/widgets/TopBar/TopBar";
 
 export default function Home() {
   return (
     <>
-      <div className="border-amber-500 container mx-auto">
+      <header className="container mx-auto">
         <TopBar />
         <SearchBar />
-      </div>
+      </header>
       <hr className="mt-3" />
-      <div className="mt-5 border-2 border-blue-500">Área conteúdo</div>
-      <div className="border-2 border-purple-500">Rodapé</div>
+      <main className="container mx-auto mt-5">
+        <HorizontalTabbedNagivation />
+      </main>
+      <footer className="container mx-auto border-2 border-purple-500">
+        Rodapé
+      </footer>
     </>
   );
 }

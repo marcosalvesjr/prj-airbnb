@@ -7,7 +7,7 @@ import { IconUserCircle } from "@/assets/icons";
 
 const TopBar = () => {
   return (
-    <div className="container mx-auto py-6 flex justify-between items-center">
+    <div className="py-6 flex justify-between items-center">
       <Logo />
       <div className="flex gap-6">
         <Link href={"/"}>Acomodações</Link>
