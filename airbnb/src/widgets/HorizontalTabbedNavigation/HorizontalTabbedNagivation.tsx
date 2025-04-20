@@ -131,7 +131,7 @@ const HorizontalTabbedNagivation = () => {
     },
   ];
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row items-center">
       {/*Navegação Filtros*/}
       <Swiper
         spaceBetween={10}
@@ -161,13 +161,15 @@ const HorizontalTabbedNagivation = () => {
         ))}
       </Swiper>
       {/*Filtros*/}
-      <ButtonIcon
-        icone={
-          <IconAdjustmentsHorizontal size={20} aria-label="icone de filtro" />
-        }
-      >
-        Filtros
-      </ButtonIcon>
+      <div>
+        <ButtonIcon
+          icone={
+            <IconAdjustmentsHorizontal size={20} aria-label="icone de filtro" />
+          }
+        >
+          Filtros
+        </ButtonIcon>
+      </div>
     </div>
   );
 };
