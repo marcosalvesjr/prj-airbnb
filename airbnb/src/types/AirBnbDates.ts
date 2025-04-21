@@ -5,7 +5,7 @@ export type AirBnbApi = {
 
 export type Accommodation = {
   id: string;
-  tittle: string;
+  title: string;
   date: string;
   testimonials: Testimonials[];
   hasBadge: boolean;

@@ -1,11 +1,14 @@
 //widgates
+import { fetchData } from "@/utils/api";
 import Acomodations from "@/widgets/Accomodations/Accomodations";
 import FooterWidget from "@/widgets/FooterWidget/FooterWidget";
 import HorizontalTabbedNagivation from "@/widgets/HorizontalTabbedNavigation/HorizontalTabbedNagivation";
 import SearchBar from "@/widgets/SearchBar/SearchBar";
 import TopBar from "@/widgets/TopBar/TopBar";
 
-export default function Home() {
+export default async function Home() {
+  const data = await fetchData();
+
   return (
     <>
       <header className="container mx-auto">
