@@ -17,8 +17,8 @@ export default async function Home() {
       </header>
       <hr className="mt-3" />
       <main className="container mx-auto mt-5">
-        <HorizontalTabbedNagivation />
-        <Acomodations />
+        <HorizontalTabbedNagivation icons={data.icons} />
+        <Acomodations accommodation={data.accommodation} />
       </main>
       <footer className="bg-gray-200">
         <FooterWidget />

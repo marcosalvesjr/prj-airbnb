@@ -11,7 +11,9 @@ const TopBar = () => {
       <Logo />
       <div className="flex gap-6">
         <Link href={"/"}>Acomodações</Link>
-        <Link href={"#"}>Experiência</Link>
+        <Link className="text-gray-400" href={"#"}>
+          Experiência
+        </Link>
       </div>
       <ButtonIcon
         icone={<IconUserCircle aria-label="Ícone de usuário" size={20} />}
