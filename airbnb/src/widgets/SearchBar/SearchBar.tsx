@@ -3,9 +3,9 @@ import { IconSearch } from "@/assets/icons";
 const SearchBar = () => {
   return (
     <>
-      <div className="rounded-full border-1 container mx-auto px-3 py-2 flex items-center shadow-md shadow-gray-200 w-full max-w-2xl">
+      <div className="rounded-full border-1 border-gray-100 container mx-auto px-3 py-2 flex items-center shadow-md shadow-gray-300 w-full max-w-2xl">
         <input
-          className="w-full focus:outline-0"
+          className="w-full focus:outline-0 "
           type="text"
           placeholder="Digite sua pesquisa..."
         />

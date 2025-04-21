@@ -15,7 +15,7 @@ export default async function Home() {
         <TopBar />
         <SearchBar />
       </header>
-      <hr className="mt-3" />
+      <hr className="mt-4 border-gray-100 shadow-lg shadow-gray-300" />
       <main className="container mx-auto mt-5">
         <HorizontalTabbedNagivation icons={data.icons} />
         <Acomodations accommodation={data.accommodation} />
