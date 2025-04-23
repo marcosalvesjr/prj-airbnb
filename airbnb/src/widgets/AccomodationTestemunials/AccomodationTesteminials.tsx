@@ -1,45 +1,14 @@
 import React from "react";
 import { IconStarFilled } from "@/assets/icons";
 import Image from "next/image";
+import { Testimonials } from "@/types/AirBnbDates";
 
-const AccomodationTestemunials = () => {
-  const testemunials = [
-    {
-      id: "560b7417-4280-4afc-ae1d-9159934fde2a",
-      name: "Eufrásio",
-      image:
-        "https://web.codans.com.br/airbnb/img/feedback/560b7417-4280-4afc-ae1d-9159934fde2a.jpg",
-      comment: "Bacon ipsum dolor amet tenderloin swine t-bone flank.",
-      rating: 5,
-      customerTime: 5,
-      createdAt: 7,
-      stayedAt: 2,
-    },
-    {
-      id: "63901507-1bf2-4e49-8798-eeaf2f4fc0a1",
-      name: "Raquélen",
-      image:
-        "https://web.codans.com.br/airbnb/img/feedback/63901507-1bf2-4e49-8798-eeaf2f4fc0a1.jpg",
-      comment:
-        "Bacon ipsum dolor amet tenderloin pastrami brisket bresaola, ham burgdoggen chicken shankle swine strip steak venison frankfurter.",
-      rating: 5,
-      customerTime: 2,
-      createdAt: 7,
-      stayedAt: 8,
-    },
-    {
-      id: "df3745f0-175e-4831-9ac7-b94ae7e76c1f",
-      name: "Cristina",
-      image:
-        "https://web.codans.com.br/airbnb/img/feedback/df3745f0-175e-4831-9ac7-b94ae7e76c1f.jpg",
-      comment:
-        "Bacon ipsum dolor amet strip steak pork belly spare ribs, bacon tenderloin sausage cow.",
-      rating: 3.5,
-      customerTime: 4,
-      createdAt: 5,
-      stayedAt: 2,
-    },
-  ];
+type AccomodationTesteminialsProps = {
+ testimonials: Testimonials[];
+};
+
+const AccomodationTestemunials = (props:AccomodationTesteminialsProps) => {
+  const testemunials = props.testimonials;
 
   return (
     <div className="w-full py-4">

@@ -30,7 +30,7 @@ export default async function Page({ params }: { params: Promise<PageProps> }) {
         <Gallery photos={acomodacao.photos} />
         <div className="flex flex-col md:flex-row">
           <AccomodationDetails accommodation={acomodacao} />
-          <AccomodationTestemunials />
+          <AccomodationTestemunials testimonials={acomodacao.testimonials} />
         </div>
       </main>
       <footer className="bg-gray-200">
